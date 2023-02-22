@@ -1,60 +1,92 @@
-.curve-button {
-    display: inline-block;
-    border: none;
-    background-color: #32CD32; /* green */
-    color: white;
-    padding: 10px 20px;
-    font-size: 20px;
-    border-radius: 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-  }
-  /* Styles for screens 768px and below */
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-color: #4070f4;
+}
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #4070f4;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+.text-data .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.buttons .button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  border-radius: 24px;
+  margin: 0 10px;
+  padding: 8px 24px;
+  background-color: #4070f4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+.buttons .button:hover {
+  background-color: #0e4bf1;
+  color: black;
+}
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
 }
 
-/* Styles for screens 480px and below */
-@media only screen and (max-width: 480px) {
-  body {
-    font-size: 12px;
-  }
-}
-  .curve-button:hover {
-    background-color: #228B22; /* darker green */
-  }
-  
-  .curve-button::before {
-    content: "";
-    position: absolute;
-    top: -10%;
-    left: -50%;
-    width: 200%;
-    height: 120%;
-    background-color: #32CD32; /* green */
-    transform: rotate(-45deg);
-    z-index: -1;
-    transition: all 0.3s ease;
-  }
-  
-  .curve-button:hover::before {
-    transform: rotate(0);
-    width: 140%;
-    height: 140%;
-    top: -20%;
-    left: -20%;
-  }
-  h1{
-    color: yellowgreen;
-    font-weight: 800;
-    font-size: 30px;
-  }
-  body{
-    background-color: black;
-  }
