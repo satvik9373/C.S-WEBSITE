@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contact us.css">
+	<link rel="stylesheet" href="CS.CSS">
+    <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="prism.css" />
+        <link rel="stylesheet" href="C++.css">
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="c++ codes.html">
+        <link rel="stylesheet" href="javascriptcodes.html">
+        <link rel="stylesheet" href="contact us.html">
+        <link rel="stylesheet" href="language info.html">
+        <link rel="stylesheet" href="login.html">
+        <link rel="stylesheet" href="explore.html">
+        <link rel="stylesheet" href="code compiler.html">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./about us.css">
+</head>
+<body>
+	<style>
+		.i-am-head{
+			width: 100%;
+		}
+
+		.grid-c{
+			display: grid;
+			grid-template-columns: 100%;
+			justify-content: center;
+			align-items: center !important;
+			max-width: 600px;
+			margin: auto;
+		}
+
+		.grid-c>form{
+			width: fit-content;
+			margin: auto;
+		}
+	</style>
+	<header>
+		<a href="index.html" class="logo"><i class="ri-home-2-fill"></i><span>Codies</span></a>
+		<ul id="navbar" class="">
+			<li><a href="index.html" class="active">Home</a></li>
+			<li><a href="https://chat.openai.com/chat">Chat Gpt</a></li>
+			<li><a href="./code compiler.html">Code Compiler</a></li>
+			<li><a href="about us.html">About Us</a></li>
+			<li><a href="contact us.html">Contact Us</a></li>
+		</ul>
+		<div class="main">
+		  <a href="login.html" class="user"><i class="ri-user-fill"></i>Sign in</a>
+		  <div class="ri-menu-line" id="menu-icon" onclick="menu()"></div>
+		</div>
+	</header>
+	<div class="grid-c">
+		<h2 class="i-am-head">Contact Us</h2>
+
+	<form action="mail.php" method="post" autocomplete="off">
+		
+		<label for="name">Your Name</label>
+		<input type="text" name="name" placeholder="Your Name">
+
+		<label for="email">E-mail</label>
+		<input type="email" name="email" placeholder="Email">
+
+		<label for="message">Message</label>
+		<textarea name="message" placeholder="Message"></textarea>
+
+		<input type="submit" value="Submit">
+
+	</form>
+	</div>
+    
+    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

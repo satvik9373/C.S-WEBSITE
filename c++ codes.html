@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism.css" />
+    <link rel="stylesheet" href="C++.css">
+    <link rel="stylesheet" href="C++.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="c++ codes.html">
+    <link rel="stylesheet" href="javascriptcodes.html">
+    <title>C++ Codes& Output's</title>
+  </head>
+  <body>
+    <div class="text-boxes">
+      <div class="text-box HTMLBox">
+        <h2> Output in C++ </h2>
+        <br>
+        <h3-1> In this article, we will discuss the very basic and most common <u>I/O operations</u> required for C++ programming. C++ runs on lots of platforms like Windows, Linux, Unix, Mac, etc. This is the most basic method for handling output in C++.
+ The cout is used very often for printing outputs, i.e., on the monitor. The predefined object cout is an instance of iostream class. For formatted output operations, cout is used together with the insertion operator, which is written as “<<” (i.e., two “less than” signs).</h3-1>    
+          <div class="topic-1">
+            Program 1: <br>
+            Below is the C++ program to demonstrate the use of cout object: <br>
+            C++   
+      <div class="container">
+      <div class="code-wrapper">
+        <pre>
+            <code id="code" class="language-c">
+              // C++ program to demonstrate cout
+              #include <iostream>
+              using namespace std;
+              
+              // Driver Code
+              int main()
+              {
+                // Used to display the output
+                // to the standard output device
+                cout << "CoderByte!";
+              
+                return 0;
+              }                                         
+            </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>  
+    </div>
+    <div class="code-output"><strong>Output:</strong><p></p><pre>CoderByte!</pre>
+Time Complexity: O(1) <br>
+Auxiliary Space: O(1)
+    </div>
+    <br>
+    <div class="topic-2">Program 2: <br>
+      Below is the C++ program to demonstrate a manipulator that can be used with the cout object: <br>
+  C++</div>
+      <div class="container">
+      <div class="code-wrapper">
+        <pre>
+            <code id="code" class="language-c">
+              // C++ program to demonstrate the
+              // endl manipulator
+              #include <iostream>
+              using namespace std;
+              
+              // Driver Code
+              int main()
+              {
+              
+                // Stores the data in a
+                // variable str
+                char str[] = "CoderByte";
+              
+                // Print the output
+                cout << " A computer science portal"
+                  << " for geeks - " << str;
+              
+                return 0;              
+            </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+      </div>  
+    </div>
+    <div class="code-output"><strong>Output:</strong><p></p><pre>A computer science portal for geeks - CoderByte</pre>
+Time Complexity: O(1) <br>
+Auxiliary Space: O(1)
+    </div>
+    <br>
+    <div class="topic-3">Program 3: <br>
+      In this example, the user will be asked for his/her city name, when the user enters
+      his/her city it will store the city name in the name variable. After that, the console will
+      print the output string. Below is the program for the same: <br>
+      C++
+      </div>
+<div class="container">
+<div class="code-wrapper">
+<pre>
+    <code id="code" class="language-c">
+      // C++ program to illustrate the
+      // above concept
+      #include <iostream>
+      using namespace std;
+      
+      // Driver Code
+      int main()
+      {
+        // Name variable can store
+        // upto 30 character
+        char name[30];
+      
+        // Print the output(asking user
+        // to enter city name)
+        cout << "Please enter your city name: ";
+      
+        // Take input from user and store
+        // in name variable
+        cin >> name;
+      
+        // Print output string including
+        // user input data
+        cout << "Your city is: "
+          << name << endl;
+      
+        return 0;
+      }      
+    </code>
+</pre>
+<button id="copy-button">Copy</button>
+</div>  
+</div>
+<div class="code-output"><strong>Output:</strong><p></p><pre>Input: Mumbai
+Output: Mumbai</pre>
+Time Complexity: O(1) <br>
+Auxiliary Space: O(1)
+</div>
+
+
+    <script src="main.js" defer></script>
+    <script src="prism.js"></script>
+  </body>
+</html>

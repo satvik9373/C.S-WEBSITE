@@ -1,0 +1,60 @@
+.curve-button {
+    display: inline-block;
+    border: none;
+    background-color: #32CD32; /* green */
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  /* Styles for screens 768px and below */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Styles for screens 480px and below */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+  .curve-button:hover {
+    background-color: #228B22; /* darker green */
+  }
+  
+  .curve-button::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -50%;
+    width: 200%;
+    height: 120%;
+    background-color: #32CD32; /* green */
+    transform: rotate(-45deg);
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  
+  .curve-button:hover::before {
+    transform: rotate(0);
+    width: 140%;
+    height: 140%;
+    top: -20%;
+    left: -20%;
+  }
+  h1{
+    color: yellowgreen;
+    font-weight: 800;
+    font-size: 30px;
+  }
+  body{
+    background-color: black;
+  }
