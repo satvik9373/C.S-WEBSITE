@@ -31,6 +31,16 @@ display: none;
     #menu-icon{
         display: block !important;
         }
+
+        .hid{
+            display: none !important;
+            width: 100%;
+            overflow: hidden !important;
+        }
+        
+        .hid2{
+            display: block !important;
+        }
   }
   
   /* Styles for screens 480px and below */
@@ -227,6 +237,13 @@ video{
     height: 100vh;
 }
 .hid{
+    display: block;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.hid2{
+    display: none;
     width: 100%;
     overflow: hidden !important;
 }
