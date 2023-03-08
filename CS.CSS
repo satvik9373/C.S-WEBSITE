@@ -6,10 +6,16 @@
     text-decoration: none;
     list-style: none;
 }
-
+body{
+    width: 100%;
+}
+header{
+    width: 100%;
+}
 .navbar{
     background-color: black !important;
     z-index: 2000 !important;
+    width: 100%;
 }
 #menu-icon{
 display: none;
@@ -213,4 +219,7 @@ h3-2{
         color: transparent;
     }
 }
-    
+video{
+    width: 100%;
+    background-size: cover;
+}
