@@ -25,6 +25,9 @@ display: none;
     body {
       font-size: 14px;
     }
+    video{
+        transform: scale(2);
+    }
     #menu-icon{
         display: block !important;
         }
@@ -222,4 +225,8 @@ h3-2{
 video{
     width: 100%;
     background-size: cover;
+}
+.hid{
+    width: 100%;
+    overflow: hidden !important;
 }
