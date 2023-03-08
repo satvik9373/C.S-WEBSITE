@@ -223,8 +223,8 @@ h3-2{
     }
 }
 video{
-    width: 100%;
-    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 .hid{
     width: 100%;
